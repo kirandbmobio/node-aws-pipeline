@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
-const mongodb = require('mongodb')
 
 let PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the home page!!")
+    res.send("Welcome to the home page babyyy!!")
 })
 
 app.listen(PORT, () => {
