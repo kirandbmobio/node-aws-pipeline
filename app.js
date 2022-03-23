@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+const mongodb = require('mongodb')
+
+let PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the home page!!")
+})
+
+app.listen(PORT, () => {
+    console.log(`Server is started at ${PORT}`)
+})
